@@ -21,7 +21,7 @@ dependencies: [
 |value(forKey:)|讀取數值|
 |removeValue(forKey:)|移除數值|
 |removeAll()|移除全部的數值|
-|@WWCacheManager|修飾字|
+|@WWCacheValue|修飾字|
 
 ### Example - 範例
 ```swift
