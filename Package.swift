@@ -12,7 +12,7 @@ let package = Package(
         .library(name: "WWCacheManager", targets: ["WWCacheManager"]),
     ],
     targets: [
-        .target(name: "WWCacheManager"),
+        .target(name: "WWCacheManager", resources: [.copy("Privacy")]),
     ],
     swiftLanguageVersions: [
         .v5

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		810B164A2CF80BB80053C6DD /* WWCacheManager in Frameworks */ = {isa = PBXBuildFile; productRef = 810B16492CF80BB80053C6DD /* WWCacheManager */; };
+		810B164D2CF80BD40053C6DD /* WWCacheManager in Frameworks */ = {isa = PBXBuildFile; productRef = 810B164C2CF80BD40053C6DD /* WWCacheManager */; };
 		817567FC2CA2C2B400B24577 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817567FB2CA2C2B400B24577 /* AppDelegate.swift */; };
 		817568002CA2C2B400B24577 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817567FF2CA2C2B400B24577 /* ViewController.swift */; };
 		817568032CA2C2B400B24577 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817568012CA2C2B400B24577 /* Main.storyboard */; };
@@ -15,7 +17,6 @@
 		817568142CA2C33600B24577 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817568122CA2C33600B24577 /* Constant.swift */; };
 		817568152CA2C33600B24577 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817568132CA2C33600B24577 /* Extension.swift */; };
 		8175681C2CA2C3C600B24577 /* WWPrint in Frameworks */ = {isa = PBXBuildFile; productRef = 8175681B2CA2C3C600B24577 /* WWPrint */; };
-		81E38E5C2CC0C1F80099B373 /* WWCacheManager in Frameworks */ = {isa = PBXBuildFile; productRef = 81E38E5B2CC0C1F80099B373 /* WWCacheManager */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +37,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8175681C2CA2C3C600B24577 /* WWPrint in Frameworks */,
-				81E38E5C2CC0C1F80099B373 /* WWCacheManager in Frameworks */,
+				810B164D2CF80BD40053C6DD /* WWCacheManager in Frameworks */,
+				810B164A2CF80BB80053C6DD /* WWCacheManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +142,8 @@
 			name = Example;
 			packageProductDependencies = (
 				8175681B2CA2C3C600B24577 /* WWPrint */,
-				81E38E5B2CC0C1F80099B373 /* WWCacheManager */,
+				810B16492CF80BB80053C6DD /* WWCacheManager */,
+				810B164C2CF80BD40053C6DD /* WWCacheManager */,
 			);
 			productName = Example;
 			productReference = 817567F82CA2C2B400B24577 /* Example.app */;
@@ -172,7 +175,7 @@
 			mainGroup = 817567EF2CA2C2B400B24577;
 			packageReferences = (
 				8175681A2CA2C3C600B24577 /* XCRemoteSwiftPackageReference "WWPrint" */,
-				81E38E5A2CC0C1F80099B373 /* XCRemoteSwiftPackageReference "WWCacheManager" */,
+				810B164B2CF80BD40053C6DD /* XCRemoteSwiftPackageReference "WWCacheManager" */,
 			);
 			productRefGroup = 817567F92CA2C2B400B24577 /* Products */;
 			projectDirPath = "";
@@ -439,6 +442,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		810B164B2CF80BD40053C6DD /* XCRemoteSwiftPackageReference "WWCacheManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/William-Weng/WWCacheManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
 		8175681A2CA2C3C600B24577 /* XCRemoteSwiftPackageReference "WWPrint" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/William-Weng/WWPrint";
@@ -447,26 +458,22 @@
 				minimumVersion = 1.3.1;
 			};
 		};
-		81E38E5A2CC0C1F80099B373 /* XCRemoteSwiftPackageReference "WWCacheManager" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/William-Weng/WWCacheManager";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		810B16492CF80BB80053C6DD /* WWCacheManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WWCacheManager;
+		};
+		810B164C2CF80BD40053C6DD /* WWCacheManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 810B164B2CF80BD40053C6DD /* XCRemoteSwiftPackageReference "WWCacheManager" */;
+			productName = WWCacheManager;
+		};
 		8175681B2CA2C3C600B24577 /* WWPrint */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8175681A2CA2C3C600B24577 /* XCRemoteSwiftPackageReference "WWPrint" */;
 			productName = WWPrint;
-		};
-		81E38E5B2CC0C1F80099B373 /* WWCacheManager */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 81E38E5A2CC0C1F80099B373 /* XCRemoteSwiftPackageReference "WWCacheManager" */;
-			productName = WWCacheManager;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
