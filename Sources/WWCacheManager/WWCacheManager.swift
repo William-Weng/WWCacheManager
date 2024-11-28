@@ -25,10 +25,11 @@ open class WWCacheManager<KeyType, ObjectType>: NSObject where KeyType: AnyObjec
 // MARK: - public static function
 public extension WWCacheManager {
     
-    /// [建立WWCache](https://juejin.cn/post/6844903810528182280)
+    /// [建立WWCacheManager](https://juejin.cn/post/6844903810528182280)
     /// - Parameters:
     ///   - countLimit: 最多快取的數量 => 100個
     ///   - totalCostLimit: 最多快取的容量 => 10MB
+    ///   - delegate: NSCacheDelegate?
     /// - Returns: WWCacheManager
     static func build(countLimit: Int = 100, totalCostLimit: Int = 10 * 1024 * 1024, delegate: NSCacheDelegate? = nil) -> WWCacheManager {
         
