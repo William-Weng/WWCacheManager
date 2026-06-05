@@ -6,45 +6,49 @@
 //
 
 import UIKit
-import WWPrint
 import WWCacheManager
 
-// MARK: - ViewController
 final class ViewController: UIViewController {
-
-    static let manager = WWCacheManager<NSString, UIImage>.build()
+    
+    static let manager = WWCacheManager<String, UIImage>()
     
     @WWCacheValue(ViewController.manager, "heartImage") var heartImage
     
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        cacheManagerDemo()
-        cacheValueDemo()
+        
+        cacheString("Hello, World!", for: "word")
+        cacheImage(UIImage(systemName: "heart.fill"))
     }
 }
 
-// MARK: - Demo
 private extension ViewController {
     
-    func cacheManagerDemo() {
+    func cacheString(_ string: String, for key: String) {
         
-        let manager = WWCacheManager<NSString, NSData>.build()
-        let key = "cache" as NSString
-        let data = "Hello, WWCacheManager!".data(using: .utf8)! as NSData
+        let manager = WWCacheManager<String, Data>()
+        let data = string.data(using: .utf8)!
         
         manager.setValue(data, forKey: key)
-        wwPrint(manager.value(forKey: key))
+        
+        let cacheData = manager.value(forKey: key)!
+        let cacheString = String(data: cacheData, encoding: .utf8)!
+        print("Cache String => \(cacheString)")
         
         manager.removeValue(forKey: key)
-        wwPrint(manager.value(forKey: key))
+        print("Cache Remove => \(String(describing: manager.value(forKey: key)))")
     }
     
-    func cacheValueDemo() {
-                
-        heartImage = UIImage(systemName: "heart.fill")
-        wwPrint(heartImage)
+    func cacheImage(_ image: UIImage?) {
+        
+        heartImage = image
+        print("Cache Image => \(heartImage!.size)")
         
         heartImage = nil
-        wwPrint(heartImage)
+        print("Cache Remove => \(String(describing: heartImage))")
     }
 }

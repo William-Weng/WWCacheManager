@@ -1,4 +1,5 @@
 {
+  "originHash" : "f0ef4fa68885230388eb9a5279c7c2f028f952a724762b208e330e541d49be11",
   "pins" : [
     {
       "identity" : "wwcachemanager",
@@ -8,16 +9,7 @@
         "revision" : "34d65216cf3b036a820b91f1070134227edb19a2",
         "version" : "1.0.1"
       }
-    },
-    {
-      "identity" : "wwprint",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/William-Weng/WWPrint",
-      "state" : {
-        "revision" : "8f5928f5d36624d77f8fc563fd8e31a59cfac6b6",
-        "version" : "1.3.1"
-      }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
