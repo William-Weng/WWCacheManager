@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/William-Weng/WWCacheManager",
       "state" : {
-        "revision" : "34d65216cf3b036a820b91f1070134227edb19a2",
-        "version" : "1.0.1"
+        "revision" : "f1cb47f9ecf8bd4c323432a1145f4b5628bb7bab",
+        "version" : "1.1.0"
       }
     }
   ],

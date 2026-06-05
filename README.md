@@ -10,6 +10,8 @@
 
 一個高效、線程安全的快取管理器，支援 `DispatchQueue` 讀寫鎖和 `@propertyWrapper` 語法。
 
+![Example](https://github.com/user-attachments/assets/8c0b3475-49bc-4158-bdf3-c1a705c2b445)
+
 ## ✨ 特性
 
 - 🚀 **線程安全**：使用 `DispatchQueue` 讀寫鎖（ concurrent + barrier）

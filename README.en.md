@@ -10,6 +10,8 @@
 
 An efficient, thread-safe cache manager that supports `DispatchQueue` read-write locking and `@propertyWrapper` syntax.
 
+![Example](https://github.com/user-attachments/assets/8c0b3475-49bc-4158-bdf3-c1a705c2b445)
+
 ## ✨ Features
 
 - 🚀 **Thread-safe**: Uses `DispatchQueue` read-write locking (`concurrent` + `barrier`).
